@@ -1,0 +1,23 @@
+{
+  "name": "tttp",
+  "version": "1.2.0",
+  "description": "Saxion HBO-ICT 2.3 SE Project Networks TTTP server and reference client.",
+  "repository": "https://github.com:SaxionACT/2019-2020-Project-Netwerken-Drone2P.git",
+  "main": "servertttp.js",
+  "dependencies": {
+    "buffer-builder": "^0.2.0",
+    "buffer-reader": "^0.1.0",
+    "express": "^4.17.1",
+    "foreman": "^3.0.1",
+    "throng": "^4.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nf start"
+  },
+  "keywords": [],
+  "contributors": [
+    "Frank van Viegen",
+    "Erik van der Arend"
+  ]
+}
