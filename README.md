@@ -1,7 +1,7 @@
 # Used for personal assignment
 
 ## PRECONDITION
-## You have opened a Powershell window 
+## You have opened a Powershell window and installed Docker Desktop on Windows. See: https://docs.docker.com/get-started/
 
 ## clone repo
 git clone https://github.com/looking4ward/cloud-automation.git
@@ -19,11 +19,11 @@ docker build -t drone2p .
 docker run --name my_drone2p -p 29588:29588/udp -p 80:80/tcp -p 443:443/tcp -p 43554:43554/udp drone2p
 
 ## Check your local ip-address
-### docker inspect my_drone2p | grep Address  #linux
 docker inspect my_drone2p | select-string Address  #powershell
 
 ## or check container using bash shell and type 'hostname -I' to see all IP-addresses
 docker exec -it my_drone2p /bin/bash 
+
 ## type your commands inside the bash shell
 hostname -I
 
