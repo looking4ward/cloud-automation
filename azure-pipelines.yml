@@ -1,0 +1,19 @@
+trigger:
+- MASTER
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+stages:
+  - stage: 'Infra'
+    displayName: 'Infra'
+    jobs:
+    - job: 'CreateVM'
+      displayName: 'Create VM'
+      steps:
+      - task: AzureCLI@2
+        inputs:
+          azureSubscription: 'ACT - HBO-ICT'
+          scriptType: 'pscore'
+          scriptLocation: 'scriptPath'
+          scriptPath: "init-environment.ps1"
