@@ -1,0 +1,10 @@
+{
+	"relativePathToDockerFolderContainingDockerFile": "HelloWorld",
+	"acrName": "acr-ce1-CloudEngineering",
+	"resourceGroup": "rg-ce1-CloudEngineering",
+	"location": "westeurope",
+	"imageName": "drone2p",
+	"imagetag": "latest",
+	"dockerInternallyExposedPort": "29588/udp",
+	"localhostPort": "29588/udp"
+}
