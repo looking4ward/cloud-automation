@@ -1,5 +1,5 @@
 {
-	"relativePathToDockerFolderContainingDockerFile": "HelloWorld",
+	"relativePathToDockerFolderContainingDockerFile": ".",
 	"acrName": "acr-ce1-CloudEngineering",
 	"resourceGroup": "rg-ce1-CloudEngineering",
 	"location": "westeurope",
