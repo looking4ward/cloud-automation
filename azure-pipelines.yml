@@ -1,4 +1,9 @@
 trigger:
+- task: AzurePowerShell@5
+  inputs:
+    ScriptType: 'FilePath'
+    ScriptPath: 'init-environment.ps1'
+    errorActionPreference: 'continue'
 - MASTER
 
 pool:
