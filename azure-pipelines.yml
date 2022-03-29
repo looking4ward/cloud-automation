@@ -13,7 +13,7 @@ stages:
       steps:
       - task: AzureCLI@2
         inputs:
-          azureSubscription: 'ACT - HBO-ICT'
+          azureSubscription: 'a54f3e5d-8705-4cff-98a5-329900c7248d'
           scriptType: 'pscore'
           scriptLocation: 'scriptPath'
           scriptPath: "init-environment.ps1"
